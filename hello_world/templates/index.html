@@ -19,10 +19,23 @@
             <p class="small">
                 Edit <code>hello_world/templates/index.html</code> and see changes live!
             </p>
-            <p>i want to see if these changes get committed</p>
-            <!-- copilot can you insert an example paragraph here? -->
         </header>
     </div>
+    <p>something</p>
+    <div>
+        # insert a form here that takes a users first and last name and has a submit button
+        # when the submit button is clicked, the user should be redirected to a page that says "Hello, <first name> <last name>!"
+
+        <form action="/hello/" method="post">
+            {% csrf_token %}
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
 </body>
 
 </html>
